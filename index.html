@@ -37,7 +37,25 @@
             </div>
         </div>
     </section>
-    <section class="feedback">565px
+    <section class="feedback">
+        <div class="wrapperContent">
+            <h1 class="faqTittle">Оставьте заявку</h1>
+            <form class="blockform" action="" method="post">
+                    <input class="inputinfo_block" type="text" name="name" placeholder="Имя" required>
+                    <input class="inputinfo_block" type="email" name="email" placeholder="E-mail" id="" required>
+                    <input class="inputinfo_block" type="tel" name="tel" placeholder="Телефон" id="" required>
+                    <select class="selectinfo_block" name="" id="">
+                        <option>Начальный тариф</option>
+                        <option>Стандартный тариф</option>
+                        <option>VIP тариф</option>
+                    </select>
+                    <div class="agreement_block">
+                    <input class="chagreement" type="checkbox" name="agreement" id="agreement1">
+                    <label class="checkbox_label" for="agreement1">Я принимаю условия <a href="#">пользовательского соглашения</a></label>
+                    </div>
+                    <button class="btn_blockform" type="submit">Отправить</button>
+            </form>
+        </div>
     </section>
     <section class="faq">
         <div class="wrapperContent">
@@ -66,15 +84,46 @@
             </ul>
         </div>
     </section>
-    <section class="team"></section>
+    <section class="team">
+        <div class="wrapperContent">
+            <h1 class="faqTittle">Наши сотрудники</h1>
+            <div class="slider">
+        <div class="slider_block">
+            <ul class="slider_list">
+                <li class="slider_item">
+                    <img src="image\userphoto\sliderphoto1.png"  alt="SliderPicture" class="slider_image">
+                    <p class="titleName">Сергей Лапшин</p>
+                    <p class="sl_info">Руководитель отдела продаж. Главный помощник генерального дирекотра Ui Team</p>
+                </li>
+                <li class="slider_item active">
+                    <img src="image\userphoto\sliderphoto2.png" alt="SliderPicture" class="slider_image">
+                    <p class="titleName">Сергей Кай</p>
+                    <p class="sl_info">Руководитель отдела продаж. Главный помощник генерального дирекотра Ui Team</p>
+                </li>
+                <li class="slider_item">
+                    <img src="image\userphoto\sliderphoto3.png" alt="SliderPicture" class="slider_image">
+                    <p class="titleName">Марина Безродова</p>
+                    <p class="sl_info">Руководитель отдела продаж. Главный помощник генерального дирекотра Ui Team</p>
+                </li>
+            </ul>
+        </div>
+        <div class="slider__controls">
+            <a href="#" class="slider_button slider_btn-prev"><i class="fas fa-chevron-left"></i></a>
+            <a href="#" class="slider_button slider_btn-next"><i class="fas fa-chevron-right"></i></a>
+        </div>
+    </div>
+</div>
+    </section>
     <footer class="footer">
         <div class="wrapperContent">
     <div class="topFooter">
         <div class="footformBlock">
             <img src="image\logo\Bubblelogofooter.png" alt="bubblelogo">
-            <p>Bubble Kit - набор готовы элементов для создания  проекта. Более 140 готовых блоков выполненных в одном стиле, сокращайте время и затраты для своего проекта.</p>
-            <input placeholder="E-mail" type="email" required> 
-            <button type="submit">Подписаться</button>
+            <p class="textinfo_form">Bubble Kit - набор готовы элементов для создания  проекта. Более 140 готовых блоков выполненных в одном стиле, сокращайте время и затраты для своего проекта.</p>
+            <form action="" method="post">
+            <input class="form_span" placeholder="E-mail" type="email" required> 
+            <button class="btn_email" type="submit">Подписаться</button>
+            </form>
         </div>
         <ul class="footerMenu rightmenu">
             <li class="fm_item"><p class="fmTitle">Клиентам</p></li>
@@ -103,8 +152,9 @@
     </div>
 </div>
     </footer>
-    
-    <script src="scripts.js"></script>
     <script src="https://kit.fontawesome.com/305a2a9687.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+    
 </body>
 </html>

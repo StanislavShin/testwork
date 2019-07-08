@@ -135,7 +135,56 @@ body
     height: 565px
     width: 100%
 
+.blockform
+    display: flex
+    flex-wrap: wrap
+    width: 570px
+    height: 300px
+    justify-content: space-between
 
+.inputinfo_block
+    width: 270px
+    height: 60px
+
+.selectinfo_block
+    width: 270px
+    height: 60px
+
+.agreement_block
+    width: 600px
+    display: block
+    text-align: center
+
+.chagreement
+    display: none
+
+.checkbox_label
+	cursor: pointer
+ 	vertical-align: middle
+
+
+.checkbox_label:before 
+	content: ""
+	display: inline-block
+	margin: 20px
+	text-align: center
+	width: 20px
+	height: 20px
+	background: #FFF
+	border: 2px solid #629fd1
+	vertical-align: middle
+
+
+.chagreement:checked + .checkbox_label:before 
+	color: white
+	content: "✓"
+	background: #629fd1
+	border-color: #629fd1
+
+.btn_blockform
+    width: 270px
+    height: 60px
+    margin: auto
 /* FAQ section style */
 .faq
     height: 739px
@@ -193,6 +242,64 @@ body
 
 .team
     height: 705px
+    /*Slider*/
+
+.slider
+	display: inline-block
+	position: relative
+	margin-left: 370px
+
+.slider_block
+	width: 370px
+	height: 280px
+
+.slider_list
+	list-style: none
+	display: flex
+	position: relative
+	left: 0
+	transition: all .5s
+	padding: 0
+	margin: 0
+	width: 1200px
+
+.slider_item
+    text-align: center
+    margin: 0 15px
+    width: 370px
+    height: 280px
+    padding-top: 23px
+
+.slider_image
+    padding-left: 63px
+    display: block
+    margin: 0 auto
+
+.slider_button
+    position: absolute
+    color: #80909c
+    font-size: 20px
+
+.slider_btn-next
+    right: -432px
+    top: 95px
+
+.slider_btn-prev
+    left: -367px
+    top: 95px
+.titleName
+    padding-top: 7px
+    padding-left: 62px
+    font-family: "Lato-Bold", sans-serif
+    font-size: 20px
+.sl_info
+    width: 367px
+    margin-top: -12px
+    font-family: "Lato-Regular", sans-serif
+    font-size: 18px
+    color: #80909c
+    padding-left: 34px
+    line-height: 28px
 
 
 /* Footer section style */
@@ -204,17 +311,46 @@ body
 .topFooter
     display: flex
     justify-content: space-between
-    padding-top: 66px
+    padding-top: 53px
 
 .footformBlock
     width: 500px
     height: 220px
+
+.textinfo_form
+    font-family: "Lato-Regular", sans-serif
+    font-size: 18px
+    color: #80909c
+    line-height: 30px
+
+.form_span
+    padding: 12px 20px
+    font-size: 18px
+    font-family: "Lato-Regular", sans-serif
+    width: 225px
+    background: #50565f
+    border: 2px solid white
+    border-radius: 5px
+    color: #b2c1cc
+
+.btn_email
+    margin-left: 28px
+    width: 170px
+    padding-top: 13px
+    padding-bottom: 12px
+    color: white
+    font-size: 17px
+    box-sizing: border-box
+    background: #629fd1
+    border-radius: 4px
+    border: 1px solid #629fd1
 
 .footerMenu
     list-style: none
     margin-top: -27px
 
 .fmTitle
+    margin-bottom: 14px
     font-family: "Lato-Bold", sans-serif
     font-size: 20px 
     color: white
@@ -224,12 +360,15 @@ body
     font-family: "Lato-Regular", sans-serif
     text-decoration: none
     color: #80909c
+    line-height: 34px
 
 .rightmenu
-    padding-right: 86px
+    padding-right: 64px
+    padding-top: 12px
 
 .leftmenu
-        padding-right: 146px
+    padding-right: 133px
+    padding-top: 12px
 .lowFooter
     padding-top: 80px
     display: flex
