@@ -13,10 +13,10 @@
         <div class="wrapperContent headMenu">
             <img class="logo" src="image\logo\BubbleMenuLogo.png" alt="BubbleLogo">
             <ul class="menuList">
-                <li class="menuItem"><a class="menu_link" href="">Услуги сервиса</a></li>
-                <li class="menuItem"><a class="menu_link" href="">Этапы работы</a></li>
-                <li class="menuItem"><a class="menu_link" href="">Контакты</a></li>
-                <li class="menuItem"><a class="menu_link" href="">Заявка</a></li>
+                <li class="menuItem"><a class="menu_link" href="#team">Услуги сервиса</a></li>
+                <li class="menuItem"><a class="menu_link" href="#FAQ">Этапы работы</a></li>
+                <li class="menuItem"><a class="menu_link" href="#footer">Контакты</a></li>
+                <li class="menuItem"><a class="menu_link" href="#formfeedback">Заявка</a></li>
             </ul>
             <div class="profileBlock">
                 <div class="photoAva">
@@ -27,42 +27,42 @@
             </div>
         </div>
     </section>
-    <section class="firstBlock">
+    <section id="hero" class="firstBlock">
         <div class="wrapperContent">
             <h1 class="fs_Tittle">Гибкость и возможности дизайна в своих лучших проявлениях</h1>
             <p class="fs_Text">От загрязнения воды у рыбы может меняться пол. Приблизительно одна треть рыб в британских территориальных водах изменила пол из-за загрязнений, приченяемых канализацией.</p>
             <div class="block_btn">
             <a style="margin-right: 28px; margin-left: 10px;" class="btn_firtsBlock" href="#">Узнать больше</a>
-            <a class="btn_firtsBlock" href="№">Купить сейчас</a>
+            <a class="btn_firtsBlock" href="#">Купить сейчас</a>
             </div>
         </div>
     </section>
-    <section class="feedback">
+    <section id="formfeedback" class="feedback">
         <div class="wrapperContent">
-            <h1 class="faqTittle">Оставьте заявку</h1>
+            <h1 class="formtitle">Оставьте заявку</h1>
             <form class="blockform" action="" method="post">
-                    <input class="inputinfo_block" type="text" name="name" placeholder="Имя" required>
-                    <input class="inputinfo_block" type="email" name="email" placeholder="E-mail" id="" required>
-                    <input class="inputinfo_block" type="tel" name="tel" placeholder="Телефон" id="" required>
-                    <select class="selectinfo_block" name="" id="">
+                    <input class="inputinfo_block inp1" type="text" name="name" placeholder="Имя" required>
+                    <input class="inputinfo_block inp2" type="email" name="email" placeholder="E-mail" id="" required>
+                    <input class="inputinfo_block inp3" type="tel" name="tel" placeholder="Телефон" id="" required>
+                    <select class="selectinfo_block inp4" name="" id="">
                         <option>Начальный тариф</option>
                         <option>Стандартный тариф</option>
                         <option>VIP тариф</option>
                     </select>
                     <div class="agreement_block">
                     <input class="chagreement" type="checkbox" name="agreement" id="agreement1">
-                    <label class="checkbox_label" for="agreement1">Я принимаю условия <a href="#">пользовательского соглашения</a></label>
+                    <label class="checkbox_label" for="agreement1">Принимаю условия <a style="color:#629fd1" href="#">пользовательского соглашения</a></label>
                     </div>
                     <button class="btn_blockform" type="submit">Отправить</button>
             </form>
         </div>
     </section>
-    <section class="faq">
+    <section id="FAQ" class="faq">
         <div class="wrapperContent">
             <h1 class="faqTittle">Ответы на вопросы</h1>
             <ul class="faqList">
                 <li class="listItem space">
-                    <img class="iconFAQ" src="image\icons\iconfaq4.png" alt="icon">
+                    <img class="iconFAQ_4" src="image\icons\iconfaq4.png" alt="icon">
                     <h4 class="li_tittle">Как начать работу?</h4>
                     <p class="li_text">Биологи составили список продуктов, способных вызывать головную боль. В него входят шоколад, помидоры, цитрусовые, сыр, молоко, яйца, мука, земляные орехи и свинина.</p>
                 </li>
@@ -84,7 +84,7 @@
             </ul>
         </div>
     </section>
-    <section class="team">
+    <section id="team" class="team">
         <div class="wrapperContent">
             <h1 class="faqTittle">Наши сотрудники</h1>
             <div class="slider">
@@ -114,7 +114,7 @@
     </div>
 </div>
     </section>
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <div class="wrapperContent">
     <div class="topFooter">
         <div class="footformBlock">
@@ -127,18 +127,18 @@
         </div>
         <ul class="footerMenu rightmenu">
             <li class="fm_item"><p class="fmTitle">Клиентам</p></li>
-            <li class="fm_item"><a class="menuItem" href="">О компании</a></li>
-            <li class="fm_item"><a class="menuItem"  href="">Оставить заявку</a></li>
-            <li class="fm_item"><a class="menuItem"  href="">База знаний</a></li>
-            <li class="fm_item"><a class="menuItem"  href="">Черный список</a></li>
-            <li class="fm_item"><a class="menuItem"  href="">Отзывы</a></li>
+            <li class="fm_item"><a class="menuItem" href="#">О компании</a></li>
+            <li class="fm_item"><a class="menuItem"  href="#formfeedback">Оставить заявку</a></li>
+            <li class="fm_item"><a class="menuItem"  href="#">База знаний</a></li>
+            <li class="fm_item"><a class="menuItem"  href="#">Черный список</a></li>
+            <li class="fm_item"><a class="menuItem"  href="#">Отзывы</a></li>
         </ul>
         <ul class="footerMenu leftmenu">
             <li class="fm_item"><p class="fmTitle">Информация</p></li>
-            <li class="fm_item"><a class="menuItem"  href="">Оставить заявку</a></li>
-            <li class="fm_item"><a class="menuItem"  href="">База знаний</a></li>
-            <li class="fm_item"><a class="menuItem"  href="">Черный список</a></li>
-            <li class="fm_item"><a class="menuItem"  href="">Отзывы</a></li>
+            <li class="fm_item"><a class="menuItem"  href="#formfeedback">Оставить заявку</a></li>
+            <li class="fm_item"><a class="menuItem"  href="#">База знаний</a></li>
+            <li class="fm_item"><a class="menuItem"  href="#">Черный список</a></li>
+            <li class="fm_item"><a class="menuItem"  href="#">Отзывы</a></li>
         </ul>
     </div>
     <div class="lowFooter">

@@ -61,7 +61,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-family: "Lato-Semibold", sans-serif;
-  font-size: 18px;
   color: #80909c;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -170,6 +169,13 @@ body {
   width: 100%;
 }
 
+.formtitle {
+  margin-top: 80px;
+  font-size: 36px;
+  text-align: center;
+  font-family: "Lato-Bold", sans-serif;
+}
+
 .blockform {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,14 +184,38 @@ body {
       flex-wrap: wrap;
   width: 570px;
   height: 300px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 25px;
 }
 
 .inputinfo_block {
+  font-size: 17px;
+  width: 194px;
+  padding: 13px 49px 19px 23px;
+  height: 23px;
+  border: 1px solid #dbe4eb;
+  border-radius: 3px;
+}
+
+.inp1 {
+  margin-right: 34px;
+  margin-bottom: 8px;
+}
+
+.inp3 {
+  margin-right: 30px;
+  margin-top: 3px;
+}
+
+.inp4 {
+  padding: 19px;
   width: 270px;
   height: 60px;
+  font-size: 17px;
+  border: 1px solid #dbe4eb;
+  border-radius: 3px;
 }
 
 .selectinfo_block {
@@ -194,9 +224,7 @@ body {
 }
 
 .agreement_block {
-  width: 600px;
-  display: block;
-  text-align: center;
+  padding-top: 10px;
 }
 
 .chagreement {
@@ -204,17 +232,19 @@ body {
 }
 
 .checkbox_label {
-  cursor: pointer;
-  cursor-vertical-align: middle;
+  line-height: 19px;
+  vertical-align: middle;
+  font-size: 18px;
+  font-family: "Lato-Regular", sans-serif;
 }
 
 .checkbox_label:before {
   content: "";
   display: inline-block;
-  margin: 20px;
+  margin-right: 13px;
   text-align: center;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   background: #FFF;
   border: 2px solid #629fd1;
   vertical-align: middle;
@@ -228,15 +258,22 @@ body {
 }
 
 .btn_blockform {
-  width: 270px;
+  width: 170px;
   height: 60px;
   margin: auto;
+  margin-bottom: -28px;
+  font-size: 18px;
+  color: white;
+  background-color: #629fd1;
+  font-family: "Lato-Regular", sans-serif;
+  border-radius: 5px;
 }
 
 /* FAQ section style */
 .faq {
   height: 739px;
   width: 100%;
+  border-top: 1px solid #dee4ea;
 }
 
 .faqTittle {
@@ -309,12 +346,19 @@ body {
   left: -19%;
 }
 
+.iconFAQ_4 {
+  position: absolute;
+  left: -18.9%;
+  top: 20%;
+}
+
 /* Team section style */
 .team {
   height: 705px;
-  /*Slider*/
+  border-top: 1px solid #dee4ea;
 }
 
+/*Slider*/
 .slider {
   display: inline-block;
   position: relative;
@@ -472,7 +516,7 @@ body {
 }
 
 .lowFooter {
-  padding-top: 80px;
+  padding-top: 68px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -506,5 +550,174 @@ body {
 
 .social_link:hover {
   color: #ffffff;
+}
+
+/* Adaptive style */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    width: auto;
+    height: auto;
+  }
+  .wrapperContent {
+    width: auto;
+    margin: 0;
+  }
+  .menuList {
+    padding: 6px 0 0 3px;
+  }
+  .menuItem {
+    font-size: 15px;
+  }
+  .fs_Tittle {
+    width: auto;
+    font-size: 40px;
+  }
+  .fs_Text {
+    width: auto;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  .team {
+    display: none;
+  }
+  .faq {
+    height: auto;
+    padding-bottom: 100px;
+  }
+  .faqList {
+    display: block;
+    height: auto;
+    width: auto;
+    margin-left: 85px;
+  }
+  .footer {
+    height: auto;
+  }
+  .topFooter {
+    padding-top: 70px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .form_span {
+    width: auto;
+  }
+  .leftmenu {
+    display: none;
+  }
+  .rightmenu {
+    padding-right: 0;
+    padding-top: 0;
+  }
+  .lowFooter {
+    padding-top: 50px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 375px) {
+  body {
+    width: auto;
+    height: auto;
+  }
+  .wrapperContent {
+    width: auto;
+    margin: 0;
+  }
+  .menuList {
+    display: none;
+  }
+  .menuItem {
+    font-size: 15px;
+  }
+  .fs_Tittle {
+    width: auto;
+    font-size: 25px;
+    padding-top: 25px;
+  }
+  .fs_Text {
+    width: auto;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-top: 20px;
+    font-size: 18px;
+  }
+  .block_btn {
+    padding-top: 51px;
+    width: auto;
+  }
+  .btn_firtsBlock {
+    padding: 9px;
+    font-size: 15px;
+  }
+  .blockform {
+    width: auto;
+    height: auto;
+  }
+  .inp1 {
+    margin-right: 0;
+  }
+  .inputinfo_block {
+    margin-bottom: 10px;
+  }
+  .agreement_block {
+    padding-top: 19px;
+    padding-left: 5px;
+  }
+  .listItem {
+    width: auto;
+    height: auto;
+  }
+  .faqLsit {
+    margin-left: 0;
+    padding-left: 49px;
+  }
+  .team {
+    display: none;
+  }
+  .faq {
+    height: auto;
+    padding-bottom: 100px;
+  }
+  .space {
+    margin-right: 0;
+  }
+  .faqList {
+    display: block;
+    height: auto;
+    width: auto;
+    margin-left: 0px;
+    padding-left: 45px;
+  }
+  .footer {
+    height: auto;
+  }
+  .topFooter {
+    padding-top: 70px;
+    display: block;
+  }
+  .footformBlock {
+    width: auto;
+    height: auto;
+  }
+  .form_span {
+    width: auto;
+    margin: 15px;
+  }
+  .btn_email {
+    margin-left: 15px;
+  }
+  .rightmenu {
+    padding-right: 0;
+    padding-top: 27px;
+  }
+  .lowFooter {
+    padding-top: o;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 /*# sourceMappingURL=style.css.map */

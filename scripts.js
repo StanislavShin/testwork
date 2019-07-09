@@ -41,3 +41,15 @@ $('.slider_button').on('click', function(e){
 			reqPos = slide.offset().left - slideOffset;
 		};
 	});
+
+$(document).ready(function () {
+	$('a[href^="#"]').bind("click", function (e) {
+		e.preventDefault();
+
+		var distanceScroll = $(this);
+		$('html, body').stop().animate({
+			scrollTop: $(distanceScroll.attr("href")).offset().top }, 1000);
+
+	});
+	return false;
+});
